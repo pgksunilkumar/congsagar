@@ -1,0 +1,129 @@
+﻿@model BusinessAccessLayer.UsedModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<script>
+    function EnlargeImage(imageId) {
+        var Img1Src = $("#img1")[0].src;
+        var Img2Src = imageId.src;
+        $(imageId).attr("src", Img1Src);
+        $("#img1").attr("src", Img2Src);
+        return false;
+    }
+</script>
+
+<h3>Used Equipment Details</h3>
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.EquipmentType)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EquipmentType)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Make)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Make)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ModelNumber)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ModelNumber)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Readings)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Readings)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ContactNumber)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ContactNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Location)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Location)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Comments)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Comments)
+                </dd>
+
+            </dl>
+        </div>
+        <div class="col-md-6" style="text-align:center;">
+            <div class="row">
+                <div class="col-md-12 shadowBorder" id="divImage1">
+                    <img id="img1" src="@Model.ImagePath" width="400" height="300" />
+                </div>
+            </div>
+
+            <div class="row" style="cursor:pointer;">
+                @if (Model.ImagePath2 != null && Model.ImagePath2 != "#")
+                {
+                    <div class="col-md-3 col-xs-3 shadowBorder" id="divImage2">
+                        <img id="img2" src="@Model.ImagePath2" width="100" height="100" onclick="return EnlargeImage(this);" />
+                    </div>
+                }
+                @if (Model.ImagePath3 != null && Model.ImagePath3 != "#")
+                {
+                    <div class="col-md-3 col-xs-3 shadowBorder" id="divImage3">
+                        <img id="img3" src="@Model.ImagePath3" width="100" height="100" onclick="return EnlargeImage(this);" />
+                    </div>
+                }
+                @if (Model.ImagePath4 != null && Model.ImagePath4 != "#")
+                {
+                    <div class="col-md-3 col-xs-3 shadowBorder" id="divImage4">
+                        <img id="img4" src="@Model.ImagePath4" width="100" height="100" onclick="return EnlargeImage(this);" />
+                    </div>
+                }
+                @if (Model.ImagePath5 != null && Model.ImagePath5 != "#")
+                {
+                    <div class="col-md-3 col-xs-3 shadowBorder" id="divImage5">
+                        <img id="img5" src="@Model.ImagePath5" width="100" height="100" onclick="return EnlargeImage(this);" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Back to List", "List")
+</p>

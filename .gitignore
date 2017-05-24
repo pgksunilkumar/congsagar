@@ -286,3 +286,13 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+
+
+packages
+DatabaseTier
+DataAccessLayer
+BusinessAccessLayer
+artifacts
+.vs
+ConGun.sln

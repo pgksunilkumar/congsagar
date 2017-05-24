@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BusinessAccessLayer.UsedModel>
+
+@{
+    ViewBag.Title = "Used Equipment List";
+}
+
+<script type="text/javascript">
+    function ReturnToDetails(itemID) 
+    {
+        window.location = 'Details/' + itemID;
+    }
+</script>
+
+<div class="row">
+    <div class="col-md-10">
+        <h3>Used Equipment List</h3>
+    </div>
+    <div class="col-md-2">
+        <h4><a href="/Used/Create" style="color:black;"><i class="fa fa-plus-circle fa-3x" aria-hidden="true" title="Add Equipment" style="cursor:pointer;"></i></a></h4>
+</div>
+</div>
+<div class="container">
+    <div class="row-fluid" style="text-align:center">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-2 col-xs-5 shadowBorderBottomRight color" style="border:1px solid gray;-moz-border-radius: 15px;border-radius: 15px;height:300px;margin-right:20px;margin-bottom:20px;">
+                <div class="row" style="height:100%;" onclick="return ReturnToDetails(@item.EquipmentID)">
+                    <div class="col-md-12" style="height:180px;">
+                        <img src="@item.ImagePath" width="150" height="150" />
+                    </div>
+                    <div class="col-md-12">
+                        <b>@Html.DisplayFor(modelItem => item.Make) (@Html.DisplayFor(modelItem => item.ModelNumber))</b>
+                    </div>
+                    <div class="col-md-12">
+                        <i class="fa fa-inr"></i>&nbsp;@Html.DisplayFor(modelItem => item.Price)
+                    </div>
+                    <div class="col-md-12">
+                        <i class="glyphicon glyphicon-phone"></i>&nbsp;@Html.DisplayFor(modelItem => item.ContactNumber)
+                    </div>
+                    <div class="col-md-12">
+                        <i class="glyphicon glyphicon-map-marker"></i>&nbsp;@Html.DisplayFor(modelItem => item.Location)
+                    </div>
+                    <div class="col-md-12">
+                        @Html.ActionLink("Get Details", "Details", new { id = item.EquipmentID })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,330 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+    function returnToUsedList() {
+        window.location = '../Used/List/';
+    }
+
+    function returnToRentalList() {
+        window.location = '../Rental/List/';
+    }
+</script>
+
+<!--Main page image content-->
+<div class="hero_congun_image">
+    <div class="hero-content">
+        <h1>Best Place to <span class="bottomright element"></span> a Heavy Equipment</h1>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" class="form-control inputCongun_00" placeholder="Enter Equipment Name, Model No., Type and so on.."  />
+                <select class="form-control inputCongun_01">
+                <option value="Categories">Categories</option>
+                <option value="Categories">Categories</option>
+                </select>
+                <button class="btn btn-primary inputCongun_02">Search</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!--Main page image content-->
+
+<!--3 icons-->
+<div class="container">
+    <div class="row text-center Congun_branding_00">
+        <div class="col-md-4">
+            <div class="shadowBorder">               
+                    <img height="60" width="60" src="~/Images/rent.png" />               
+                <h4>Rent your Equipment</h4>
+                <p>Fill the form, upload the photo, and submit! Rest assured</p>
+                <a class="congun_btn_00" href="/Rental/Create">Fill the Form</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="shadowBorder">               
+                    <img height="60" width="60" src="~/Images/buy.png" />
+                <h4>Buy Equipment</h4>
+                <p>Browse through all the equipment<br />posted by various sellers.</p>
+               <a class="congun_btn_00" href="/Used/Create">Browse Products</a>
+            </div>
+        </div>
+        <div class="col-md-4">                
+            <div class="shadowBorder">
+                <div class="roundicon_congun">25%<br />off</div>
+                <div class="roundicon_congun_00">
+                    <img height="60" width="60" src="~/Images/elite.png" />
+                    <h4>Congun Elite Services</h4>
+                    <p>Sign up for our elite services today!<br />We will work with you on your needs.</p>
+                    <a class="congun_btn_00" href="/Account/Register">Sign-up to become an Elite Member</a>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+<!--3 icons-->
+
+<!--Featured Products to Buy and   Featured Postings for Rent-->
+<div class="container">
+    <div>
+        <div class="row FeaturedBuyMargin hidden-xs">
+            <div class="col-md-12 text-center">
+                <img height="60" width="60" class="img-responsive marginauto contactus_congun_image" src="~/Images/buy.png" />
+
+                <h2 class="contactus_congun_image">Featured Products to Buy</h2>
+            </div>
+        </div>
+        <div class="row FeaturedBuyMargin hidden-md hidden-lg hidden-sm">
+            <div class="col-xs-12" style="text-align:center;">
+                <img height="60" width="60" class="img-responsive" src="~/Images/buy.png" />
+            </div>
+            <div class="col-xs-12" style="text-align:center;">
+                <h2>Featured Products to Buy</h2>
+            </div>
+        </div>
+        <div class="row text-center Congun_Products_00">
+            <div class="row">
+                <div class="col-md-12" style=" cursor:pointer;">
+                    @if (ViewBag.ImagePath1 != null)
+                    {
+                        <img id="img1" src="@ViewBag.ImagePath1" width="400" height="300" onclick="return returnToUsedList();" />
+                    }
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12" style=" cursor:pointer;">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="customimage_congun">
+                                    <img src="~/Images/crane1.png" class="img-responsive marginauto" />
+                                </div>
+                            </div>
+                            <div class="margintop5">
+                                <div class="col-md-4">  <div class="customimage_congun"> <img src="~/Images/crane1.png" class="img-responsive marginauto" /></div></div>
+                                <div class="col-md-4">  <div class="customimage_congun"> <img src="~/Images/crane1.png" class="img-responsive marginauto" /></div></div>
+                                <div class="col-md-4">  <div class="customimage_congun"> <img src="~/Images/crane1.png" class="img-responsive marginauto" /></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 marginleft25minus">
+                        <div class="col-md-12">
+                            <div class="customimage_congun_000">
+                                <img src="~/Images/crane1.png" class="img-responsive marginauto" />
+                                <div class="desc">
+                                    <p class="colorfff">1,10,000</p>
+                                    <div class="changes">
+
+                                        <div class="media-left media-middle ta-right">
+                                            <button class="btn btn-primary congun_Applynow">
+                                                BUY NOW
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top:15px;">
+                            <div class="col-md-8">
+                                <div class="customimage_congun">
+                                    <img src="~/Images/crane1.png" class="img-responsive marginauto" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+
+                                <a href="#">
+                                    <img src="~/Images/angleright.png" class="marginauto viewall_congun">
+                                    <p>View all</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                @if (ViewBag.ImagePath2 != null)
+                {
+                    <img id="img2" src="@ViewBag.ImagePath2" width="150" height="100" onclick="return returnToUsedList();" />
+                }
+                @if (ViewBag.ImagePath3 != null)
+                {
+                    <img id="img3" src="@ViewBag.ImagePath3" width="150" height="100" onclick="return returnToUsedList();" />
+                }
+                @if (ViewBag.ImagePath4 != null)
+                {
+                    <img id="img4" src="@ViewBag.ImagePath4" width="150" height="100" onclick="return returnToUsedList();" />
+                }
+                @if (ViewBag.ImagePath5 != null)
+                {
+                    <img id="img5" src="@ViewBag.ImagePath5" width="150" height="100" onclick="return returnToUsedList();" />
+                }
+                @*@Html.ActionLink("View All", "List", "Used")*@
+            </div>
+        </div>
+    </div>
+    <div class="clearfx_congun"></div>
+    <div>
+        <div class="row hidden-xs clearfx_congun">
+            <div class="col-md-12 text-center">
+                <img height="60" width="60" class="img-responsive marginauto contactus_congun_image" src="~/Images/rent.png" />
+
+                <h2 class="contactus_congun_image"">Featured Postings for Rent</h2>
+            </div>
+        </div>
+        <div class="row hidden-md hidden-lg hidden-sm margintop20">
+            <div class="col-xs-12 text-center">
+                <img height="60" width="60" src="~/Images/rent.png" />
+            </div>
+            <div class="col-xs-12 text-center">
+                <h2>Featured Postings for Rent</h2>
+            </div>
+        </div>
+        <div class="row Congun_Products_00">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="congun_posting_for_rent_00">
+                            <p>Looking for a <b>crane for 2 Weeks</b></p>
+                            <br />
+                            <p>Shyam Sunder</p>
+                            <span>8273859492</span>  <span>|</span> <span>sundar@gmail.com</span>
+                            <p>Range: Rs. 2,00,000 - Rs. 3,00,000</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="congun_posting_for_rent_01">
+                            <p>Looking for a crane for 2 Weeks</p>
+                        </div>
+                        <div class="congun_posting_for_rent_02"></div>
+                        <div class="congun_posting_for_rent_03">
+                            <p>Looking for a crane for 2 Weeks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="margintop20"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="congun_posting_for_rent_01">
+                            <p>Looking for a crane for 2 Weeks</p>
+                        </div>
+                        <div class="congun_posting_for_rent_02"></div>
+                        <div class="congun_posting_for_rent_03">
+                            <p>Looking for a crane for 2 Weeks</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="congun_posting_for_rent_00">
+                            <p>Looking for a <b>crane for 2 Weeks</b></p>
+                            <br />
+                            <p>Shyam Sunder</p>
+                            <span>8273859492</span>  <span>|</span> <span>sundar@gmail.com</span>
+                            <p>Range: Rs. 2,00,000 - Rs. 3,00,000</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfx_congun">  </div>
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <a href="#">
+                        <img src="~/Images/angleright.png" class="marginauto viewall_congun">
+                        <p>View all</p>
+                    </a>
+                </div>
+            </div>
+            @*<div class="row" style="margin-top:20px;cursor:pointer;">
+                    <div class="col-md-3"></div>
+                    @if (ViewBag.RentDetail1 != null)
+                    {
+                        <div class="col-md-3 shadowBorderBottomRight dashboardRentalGrad" style="border:1px solid gray;"  onclick="return returnToRentalList();">
+                            <p>@Html.Raw(ViewBag.RentDetail1)</p>
+                        </div>
+                    }
+                    @if (ViewBag.RentDetail2 != null)
+                    {
+                        <div class="col-md-3 shadowBorderBottomRight dashboardRentalGrad" style="border:1px solid gray;margin-left:10px;"  onclick="return returnToRentalList();">
+                            <p>@Html.Raw(ViewBag.RentDetail2)</p>
+                        </div>
+                    }
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row" style="cursor:pointer;margin-top:10px;">
+                    <div class="col-md-3"></div>
+                    @if (ViewBag.RentDetail3 != null)
+                    {
+                        <div class="col-md-3 shadowBorderBottomRight dashboardRentalGrad" style="border:1px solid gray;"  onclick="return returnToRentalList();">
+                            <p>@Html.Raw(ViewBag.RentDetail3)</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-3"></div>
+                    }
+                    @if (ViewBag.RentDetail4 != null)
+                    {
+                        <div class="col-md-3 shadowBorderBottomRight dashboardRentalGrad" style="border:1px solid gray;margin-left:10px;"  onclick="return returnToRentalList();">
+                            <p>@Html.Raw(ViewBag.RentDetail4)</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-md-3"></div>
+                    }
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row" style="cursor:pointer;margin-top:10px;">
+                    <div class="col-md-3"></div>
+                    @if (ViewBag.RentDetail5 != null)
+                    {
+                        <div class="col-md-3 shadowBorderBottomRight dashboardRentalGrad" style="border:1px solid gray;"  onclick="return returnToRentalList();">
+                            <p>@Html.Raw(ViewBag.RentDetail5)</p>
+                        </div>
+                    }
+                    else {
+                        <div class="col-md-3"></div>
+                    }
+                    @if (ViewBag.RentDetail2 != null)
+                    {
+                        <div class="col-md-3" style="margin-left:10px;">
+                            @Html.ActionLink("View All", "List", "Rental")
+                        </div>
+                    }
+                    <div class="col-md-3"></div>
+                </div>*@
+        </div>
+    </div>
+</div>
+<!--Featured Products to Buy and   Featured Postings for Rent-->
+<!--Contact us-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div>
+                <img src="~/Images/contact.PNG" class="marginauto contactus_congun_image" />
+                <span class="contactus_congun">Contact Us</span>
+            </div>
+            <div class="clearfx_congun"></div>
+            <div>
+                <p>Catalyst Building, IIIT Campus,  Gachibowli</p>
+                <p>Hyderabad, Telangana- 500 032</p>
+                <p>+91- 9989933636 | info@congun.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Contact us-->

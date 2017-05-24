@@ -1,0 +1,433 @@
+﻿* {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+
+.shadowBorder {
+    background: #fff;
+    -webkit-box-shadow: 0px 5px 1px #ccc5c5;
+    -moz-box-shadow: 0px 5px 1px #ccc5c5;
+    box-shadow: 0px 5px 1px #ccc5c5;
+    padding: 40px 21px 22px;
+    height:280px;
+}
+    .shadowBorder h4 {
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+.roundicon_congun {
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 50px;
+    border-radius: 39px;
+    height: 50px;
+    font-size: 12px;
+    color: #e22a2a;
+    margin-top: -28px;
+    font-weight: 800;
+    padding-top: 6px;
+    box-shadow: 1px 1px 5px #f2f2f2;
+}
+.roundicon_congun_00 {
+    margin-top:-25px;
+}
+.FeaturedBuyMargin {
+    text-align: center;
+}
+.marginauto{
+    margin:0 auto;
+}
+.customimage_congun {
+    background: #fff;
+    border: 10px solid #ddd;
+    border-radius:2px;
+    padding:15px;
+}
+
+.customimage_congun_000 {
+    background: #fff;
+    border: 10px solid #ddd;
+    border-radius: 2px;
+}
+
+
+.desc {
+    background: rgba(12, 85, 120, 0.85);
+    padding: 0px;
+    position: relative;
+    margin-top: -91px;
+    height: 95px;
+}
+.desc p{
+    font-size:25px;
+}
+
+
+
+.clearfx_congun {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.contactus_congun {
+    font-size: 20px;
+}
+
+.contactus_congun_image{
+    display:inline;
+}
+
+.inputCongun_00 {
+    display: inline;
+    border-radius: 0px;
+    width: 478px;
+    height: 55px;
+}
+
+.inputCongun_01 {
+    display: inline;
+    margin-left: -4px;
+    width: 127px;
+    margin-right: -3px;
+    border: none;
+    border-radius: 0px;
+    height: 55px;
+    box-shadow: none;
+    transition: none;
+}
+
+.inputCongun_02 {
+    display: inline;
+    border-radius: 0px;
+    height: 55px;
+    width: 175px;
+    background-color: #02d8ff;
+    border-color: #02d8ff;
+    border: 1px solid #02d8ff;
+    font-size: 23px;
+}
+
+    .inputCongun_02:hover {
+        background-color: #02d8ff;
+        border-color: #02d8ff;
+        border: 1px solid #02d8ff;
+    }
+
+    .inputCongun_02:focus {
+        background-color: #02d8ff;
+        border-color: #02d8ff;
+        border: 1px solid #02d8ff;
+    }
+    .inputCongun_02:visited {
+        background-color: #02d8ff;
+        border-color: #02d8ff;
+        border: 1px solid #02d8ff;
+    }
+
+
+.Congun_branding_00 {
+    margin-top: -192px;
+    padding: 92px;
+}
+
+
+
+.Congun_Products_00 {
+    padding: 17px 112px;
+}
+.margintop5{
+    margin-top:5px;
+}
+
+.marginleft25minus {
+    margin-left: -25px;
+}
+
+.colorfff{
+    color:#fff;
+}
+.congun_Applynow {
+    background: #ffce00;
+    border-color: #ffce00;
+    color: #01406a;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+    .congun_Applynow:hover {
+        background: #ffce00;
+        border-color: #ffce00;
+        color: #01406a;
+    }
+
+    .congun_Applynow:focus {
+        background: #ffce00;
+        border-color: #ffce00;
+        color: #01406a;
+    }
+
+    .congun_Applynow:visited {
+        background: #ffce00;
+        border-color: #ffce00;
+        color: #01406a;
+    }
+
+
+.viewall_congun {
+    width: 48px;
+}
+
+.margintop20{
+    margin-top:20px;
+}
+
+
+.congun_posting_for_rent_00 {
+    padding: 14px;
+    background-color: #470ca7;
+    color: #fff;
+}
+
+.congun_posting_for_rent_01 {
+    padding: 14px;
+    background-color: #4a086e;
+    color: #fff;
+    padding-top: 22px;
+    height: 65px;
+    font-weight: 800;
+}
+.congun_posting_for_rent_02 {
+    margin-top: 24px;
+}
+
+.congun_posting_for_rent_03 {
+    padding: 14px;
+    background-color: #4a086e;
+    color: #fff;
+    padding-top: 22px;
+    height: 65px;
+    font-weight: 800;
+}
+
+
+
+.CustomDropDown {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.hero_congun_image {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   url("../Images/C772755.jpg");
+    background-position: 33% -188px;
+    padding: 10px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.hero-content {
+    padding-top: 56px;
+    height: 250px;
+    text-align: center;
+    /* max-width: 50%; */
+    color: #ffffff;
+}
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    .hero-content .bottomright {
+        border: 2px solid #d0cfd1;
+        -moz-border-bottom-right-radius: 28px;
+        -webkit-border-bottom-right-radius: 28px;
+        border-bottom-right-radius: 28px;
+        -moz-border-bottom-left-radius: 28px;
+        -webkit-border-bottom-left-radius: 28px;
+        border-bottom-left-radius: 28px;
+        -moz-border-top-left-radius: 28px;
+        -webkit-border-top-left-radius: 28px;
+        border-top-left-radius: 28px;
+        width: 260px;
+        display: inline;
+        color: #0bafeb;
+        padding: 5px;
+        background: #d0cfd1;
+    }
+
+.congun_btn_00 {
+    text-decoration: none;
+    color: #009dff;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    font-size: 16px;
+}
+.congun_btn_00:hover{
+    text-decoration:none;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+
+    .fileinput-button input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        -ms-filter: 'alpha(opacity=0)';
+        font-size: 200px;
+        direction: ltr;
+        cursor: pointer;
+    }
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+    .fileinput-button input {
+        filter: alpha(opacity=0);
+        font-size: 100%;
+        height: 100%;
+    }
+}
+
+.shadowBorderBottomRight {
+    -webkit-box-shadow: 5px 8px 0px #ccc5c5;
+    -moz-box-shadow: 5px 8px 0px #ccc5c5;
+    box-shadow: 5px 8px 0px #ccc5c5;
+    padding: 5px;
+}
+
+.color:hover {
+    background: indigo; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#1fc8db, #c4f5f2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1fc8db, #c4f5f2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1fc8db, #c4f5f2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1fc8db, #c4f5f2); /* Standard syntax (must be last) */
+    cursor: pointer;
+}
+
+@media(max-width: 900px) {
+    .FeaturedBuyMargin {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:768px) {
+}
+
+/*set a border on the images to prevent shifting*/
+#gallery_01 img {
+    border: 2px solid white;
+}
+
+/*Change the colour*/
+.active img {
+    border: 2px solid #333 !important;
+}
+
+.fa-plus-circle:hover {
+    color: blueviolet;
+}
+div.ui-datepicker {
+    font-size: 12px;
+}
+.dashboardRentalGrad{
+    background: indigo; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(indigo, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(indigo, violet); /* Standard syntax (must be last) */
+    color:white;
+}
