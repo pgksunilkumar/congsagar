@@ -7,7 +7,7 @@
         $('.input-group #search_param').val(param);
     });
     $(".element").typed({
-        strings: ["Find", "Congun", "Find_2"],
+        strings: ["Buy", "Sell", "Rent"],
         //optional
         typeSpeed: 100, //default
         //optional

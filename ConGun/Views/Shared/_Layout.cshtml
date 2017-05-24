@@ -12,9 +12,82 @@
     @RenderSection("scripts", required: false)
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style type="text/css">
+        .navbar-login {
+            
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+
+        .navbar-login-session {
+            padding: 10px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        .icon-size {
+            font-size: 87px;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("congun", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })            
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+<li>@Html.ActionLink("Used Equipment", "List", "Used")</li>
+<li>@Html.ActionLink("Rental Posts", "List", "Rental")</li>
+@*<li>@Html.ActionLink("Finance", "Index", "Home")</li>*@
+                 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.Partial("_LoginPartial")</li>
+                    <li class="dropdown" style="margin-left:10px;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="    border-radius: 41px;
+    background: #fff;
+    color: #02d8ff !important;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 13px;">
+                            <span>S</span>
+                            
+                        </a>
+                        <ul class="dropdown-menu" style="padding:20px;">
+                            
+                            <li>
+                                <div class="navbar-login">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p><a href="#">My Profile</a></p>                                            
+                                            <p><a href="#">My posts</a></p>
+                                            <p><a href="#">Notifications</a></p>
+                                            <p class="text-left">
+                                                <a href="#">Logout</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,12 +101,12 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Used Equipment", "List", "Used")</li>
                     <li>@Html.ActionLink("Rental Posts", "List", "Rental")</li>
-                    @*<li>@Html.ActionLink("Finance", "Index", "Home")</li>*@
+                    @*<li>@Html.ActionLink("Finance", "Index", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
+    </div>*@
     <div class="">
         @RenderBody()
         <hr />
