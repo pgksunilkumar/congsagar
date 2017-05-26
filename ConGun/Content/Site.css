@@ -3,7 +3,6 @@
 }
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -231,7 +230,7 @@ body {
     padding: 14px;
     background-color: #470ca7;
     color: #fff;
-    border-bottom-right-radius:15px;
+    border-bottom-right-radius:15px;`
 }
 
 
@@ -376,8 +375,37 @@ body {
         opacity: 1;
     }
 }
+.congun_footer_color {
+    background: #000;
+    color: #fff;
+    padding: 30px;
+}
 
+.congun_ul_h4 {
+    padding-bottom: 22px;
+    color: #c3c3c3;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: ubuntu;
+    font-weight: 600;
+}
 
+.congun_ul li{
+    list-style:none;
+}
+    .congun_ul li a {
+        letter-spacing: .07rem;
+        transition: all 0.25s ease-out;
+        color: #968d8d;
+        display: block;
+        padding: 0 0 7px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .congun_ul li a:hover{
+        text-decoration:none;
+    }
 
 
 
@@ -422,6 +450,22 @@ body {
     background: linear-gradient(#1fc8db, #c4f5f2); /* Standard syntax (must be last) */
     cursor: pointer;
 }
+
+
+@media (min-width: 1024px) {
+    .footer-menu.wid-50-left {
+        width: 42%;
+        float: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+    }
+}
+
 
 @media(max-width: 900px) {
     .FeaturedBuyMargin {
