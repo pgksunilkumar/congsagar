@@ -376,7 +376,7 @@ body {
     }
 }
 .congun_footer_color {
-    background: #000;
+    background: #000000 url(/images/pattern.png);
     color: #fff;
     padding: 30px;
 }
@@ -407,7 +407,9 @@ body {
         text-decoration:none;
     }
 
-
+.congun_ul_li_p {
+    color: #968d8d;
+}
 
 .fileinput-button {
     position: relative;
@@ -425,6 +427,29 @@ body {
         direction: ltr;
         cursor: pointer;
     }
+
+
+.test {
+    margin-top: 23px;
+}
+    .test a {
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-family: fontawesome;
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding-top: 12px;
+        margin: 0 2px;
+        transition: all .5s;
+    }
+.fontsize12em {
+    font-size: 1.2em !important;
+}
+
+
 
 /* Fixes for IE < 8 */
 @media screen\9 {
